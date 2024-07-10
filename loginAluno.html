@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles/styleLoginAluno.css" />
     <title>Document</title>
-    <link rel="stylesheet" href="./styles/styleLoginAluno.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -25,7 +24,7 @@
       </div>
       <div class="login">
         <div class="boxLogin">
-          <h2>ESTUDANTE</h2>
+          <h2 id="test">ESTUDANTE</h2>
           <input type="text" name="user" id="user" placeholder="USERNAME:" />
           <input
             type="text"
@@ -33,9 +32,12 @@
             id="password"
             placeholder="SENHA:"
           />
-          <button id="btnLogin">ENTRAR</button>
+          <a href="alunoSalas.html"
+            ><button id="btnLogin" onclick="login()">ENTRAR</button></a
+          >
         </div>
       </div>
     </div>
+    <script src="js/scriptAluno.js"></script>
   </body>
 </html>

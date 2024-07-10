@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./styles/styleLoginEscola.css" />
+    <link rel="stylesheet" href="./styles/escolaSalas.css" />
     <title>Document</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -24,17 +24,15 @@
       </div>
       <div class="login">
         <div class="boxLogin">
-          <h2>ESCOLA</h2>
-          <input type="text" name="user" id="user" placeholder="USERNAME:" />
-          <input
-            type="text"
-            name="password"
-            id="password"
-            placeholder="SENHA:"
-          />
-          <a href="./escolaSalas.html"><button id="btnLogin">ENTRAR</button></a>
+          <h2>SALAS</h2>
+          <input type="text" name="user" id="user" placeholder="SALA NOME:" />
+          <button id="btnLogin" onclick="cadastrar()">CADASTRAR</button>
+          <select name="select" id="select">
+            <option value="" selected>Salas</option>
+          </select>
         </div>
       </div>
     </div>
+    <script src="js/scriptCadastroSala.js"></script>
   </body>
 </html>
